@@ -13,12 +13,14 @@
             android:ems="10"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp" android:hint="Enter a message" android:id="@+id/editText2"/>
+            android:layout_marginStart="16dp" android:hint="Enter a message" android:id="@+id/editText2"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/button2"/>
     <Button
             android:text="Send"
             android:layout_width="85dp"
             android:layout_height="45dp"
             android:id="@+id/button2"
-            android:layout_marginEnd="64dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBaseline_toBaselineOf="@+id/editText2"/>
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
+            app:layout_constraintStart_toEndOf="@+id/editText2" app:layout_constraintHorizontal_bias="0.5"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
